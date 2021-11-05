@@ -1,0 +1,38 @@
+@import 'mixins';
+
+.person {
+	div {
+		display: flex;
+		margin-bottom: 15px;
+
+		p {
+			font-family: 'PT Serif', serif;
+			font-weight: 400;
+			font-size: 12px;
+			writing-mode: vertical-rl;
+			text-orientation: mixed;
+			margin-left: 10px;
+		}
+	}
+
+	p {
+		font-family: 'Poppins', sans-serif;
+		font-weight: 600;
+		font-size: 18px;
+	}
+
+	@include mobile() {
+		div {
+			margin-bottom: 10px;
+
+			p {
+				font-size: 10px;
+				margin-left: 6px;
+			}
+		}
+
+		p {
+			font-size: 14px;
+		}
+	}
+}
